@@ -1,0 +1,17 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Bicho\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bicho\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^9",
+    "moneyphp/money": "^4.5",
+    "ext-ds": "*"
+  }
+}
