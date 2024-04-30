@@ -1,18 +1,16 @@
 <?php
 
-namespace Bicho\Domain\Animal;
+namespace Bicho\Domain\Entities;
 
 use Ds\Map;
 
-
-class Zoo
+class TableAnimal
 {
+
     private Map $animals;
-    private \DateTimeInterface $dataEdition;
     public function __construct()
     {
         $this->animals = new Map();
-        $this->dataEdition = new \DateTimeImmutable();
     }
 
     public function add(Animal $animal): void

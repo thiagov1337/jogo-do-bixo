@@ -1,6 +1,6 @@
 <?php
 
-namespace Bicho\Domain\Animal;
+namespace Bicho\Domain\ValueObject;
 
 class Numbers
 {
@@ -29,7 +29,7 @@ class Numbers
     private function checkNumber(int $number): void
     {
         if ($number > self::MAX_VALUE || $number < self::MIN_VALUE) {
-            throw new \InvalidArgumentException('Invalid number limit');
+            throw new \InvalidArgumentException('Invalid value');
         }
     }
 }

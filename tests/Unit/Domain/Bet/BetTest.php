@@ -2,10 +2,10 @@
 
 namespace Bicho\Tests\Unit\Domain\Bet;
 
-use Bicho\Domain\Animal\Animal;
-use Bicho\Domain\Animal\Numbers;
-use Bicho\Domain\Bet\Bet;
-use Bicho\Domain\Player\Player;
+use Bicho\Domain\Entities\Animal;
+use Bicho\Domain\Entities\Bet;
+use Bicho\Domain\Entities\Player;
+use Bicho\Domain\ValueObject\Numbers;
 use Money\Money;
 use PHPUnit\Framework\TestCase;
 

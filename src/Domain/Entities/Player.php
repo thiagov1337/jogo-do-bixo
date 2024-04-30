@@ -1,8 +1,6 @@
 <?php
 
-namespace Bicho\Domain\Player;
-
-use Bicho\Domain\Bet\Bet;
+namespace Bicho\Domain\Entities;
 
 class Player
 {

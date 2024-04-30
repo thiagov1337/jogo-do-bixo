@@ -1,6 +1,8 @@
 <?php
 
-namespace Bicho\Domain\Animal;
+namespace Bicho\Domain\Entities;
+
+use Bicho\Domain\ValueObject\Numbers;
 
 class Animal
 {

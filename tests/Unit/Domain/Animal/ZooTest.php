@@ -2,18 +2,18 @@
 
 namespace Bicho\Tests\Unit\Domain\Animal;
 
-use Bicho\Domain\Animal\Animal;
-use Bicho\Domain\Animal\Numbers;
-use Bicho\Domain\Animal\Zoo;
+use Bicho\Domain\Entities\Animal;
+use Bicho\Domain\Entities\TableAnimal;
+use Bicho\Domain\ValueObject\Numbers;
 use PHPUnit\Framework\TestCase;
 
 class ZooTest extends TestCase
 {
-    private Zoo $zoo;
+    private TableAnimal $zoo;
 
     protected function setUp(): void
     {
-        $this->zoo = new Zoo();
+        $this->zoo = new TableAnimal();
     }
 
     public function testAddAnimal()

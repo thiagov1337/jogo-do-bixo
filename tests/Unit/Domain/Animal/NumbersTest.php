@@ -2,7 +2,7 @@
 
 namespace Bicho\Tests\Unit\Domain\Animal;
 
-use Bicho\Domain\Animal\Numbers;
+use Bicho\Domain\ValueObject\Numbers;
 use PHPUnit\Framework\TestCase;
 
 class NumbersTest extends TestCase
