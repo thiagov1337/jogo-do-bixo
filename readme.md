@@ -1,1 +1,1 @@
-## Tentando estudar umas paradas de Clean Arch e algumas regrinhas :V
+## Tentando estudar umas paradas de Clean Arch e algumas outras paradas :V
