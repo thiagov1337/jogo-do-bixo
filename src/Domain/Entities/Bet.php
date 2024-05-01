@@ -25,7 +25,7 @@ class Bet
 
     public function __toString(): string
     {
-        return "'{$this->player->getNickName()}' bet {$this->$money->getAmount()} on {$this->animal->getName()}";
+        return "'{$this->player->getNickName()}' bet {$this->money->getAmount()} on {$this->animal->getName()}";
     }
 
 }
