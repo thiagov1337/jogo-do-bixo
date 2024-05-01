@@ -3,7 +3,8 @@
 namespace Bicho\Domain\Entities;
 
 
-use Bicho\Domain\Contracts\Money;
+
+use Bicho\Domain\ValueObject\Money;
 
 class Bet
 {

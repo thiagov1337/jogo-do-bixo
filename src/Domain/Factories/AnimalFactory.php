@@ -12,7 +12,7 @@ class AnimalFactory
     {
         return new Animal(
             name: $values['name'],
-            numbers: NumbersFactory::create([$values['numbers']])
+            numbers: NumbersFactory::create($values['numbers'])
         );
     }
 }

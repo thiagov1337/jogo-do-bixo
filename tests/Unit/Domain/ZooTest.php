@@ -1,6 +1,6 @@
 <?php
 
-namespace Bicho\Tests\Unit\Domain\Animal;
+namespace Bicho\Tests\Unit\Domain;
 
 use Bicho\Domain\Entities\Animal;
 use Bicho\Domain\Entities\TableAnimal;

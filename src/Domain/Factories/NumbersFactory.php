@@ -9,7 +9,7 @@ class NumbersFactory
     public static function create(array $values = []): Numbers
     {
         return new Numbers(
-            numbers: $values['numbers']
+            numbers: $values
         );
     }
 }

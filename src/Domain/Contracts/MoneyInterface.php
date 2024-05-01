@@ -2,7 +2,9 @@
 
 namespace Bicho\Domain\Contracts;
 
-interface Money
+use Bicho\Domain\ValueObject\Money;
+
+interface MoneyInterface
 {
     public function getAmount(): string;
 }

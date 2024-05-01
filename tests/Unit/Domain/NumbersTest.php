@@ -1,6 +1,6 @@
 <?php
 
-namespace Bicho\Tests\Unit\Domain\Animal;
+namespace Bicho\Tests\Unit\Domain;
 
 use Bicho\Domain\ValueObject\Numbers;
 use PHPUnit\Framework\TestCase;
