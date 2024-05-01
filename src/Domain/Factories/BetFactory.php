@@ -9,7 +9,7 @@ class BetFactory
     public static function create(array $values = []): Bet
     {
         return new Bet(
-            value: $values['value'],
+            money: $values['money'],
             animal: AnimalFactory::create($values['animal']),
             player: PlayerFactory::create($values['player'])
         );

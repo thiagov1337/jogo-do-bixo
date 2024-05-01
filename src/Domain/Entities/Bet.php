@@ -3,11 +3,14 @@
 namespace Bicho\Domain\Entities;
 
 
+use Bicho\Domain\Contracts\Money;
+
 class Bet
 {
     private bool $closed = false;
+
     public function __construct(
-        private string $value,
+        private Money  $money,
         private Animal $animal,
         private Player $player
     )
@@ -18,9 +21,10 @@ class Bet
     {
         return $this->closed = true;
     }
+
     public function __toString(): string
     {
-        return "'{$this->player->getNickName()}' bet {$this->value} on {$this->animal->getName()}";
+        return "'{$this->player->getNickName()}' bet {$this->$money->getAmount()} on {$this->animal->getName()}";
     }
 
 }
