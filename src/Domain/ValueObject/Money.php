@@ -6,11 +6,9 @@ use Bicho\Application\Contracts\MoneyInterface;
 
 class Money
 {
-    private string $amount;
 
-    public function __construct(private MoneyInterface $adapter)
+    public function __construct(private string $amount)
     {
-        $this->amount = $this->adapter->getAmount();
     }
 
     public function getAmount(): string
