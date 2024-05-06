@@ -7,13 +7,13 @@ use Bicho\Domain\Entities\TableAnimal;
 use Bicho\Domain\ValueObject\Numbers;
 use PHPUnit\Framework\TestCase;
 
-class ZooTest extends TestCase
+class TableAnimalTest extends TestCase
 {
-    private TableAnimal $zoo;
+    private TableAnimal $animals;
 
     protected function setUp(): void
     {
-        $this->zoo = new TableAnimal();
+        $this->animals = new TableAnimal();
     }
 
     public function testAddAnimal()
@@ -22,8 +22,8 @@ class ZooTest extends TestCase
         $animal = new Animal("Avestruz", new Numbers([1, 5, 3, 7]));
 
         // Act
-        $this->zoo->add($animal);
-        $animals = $this->zoo->getAnimals();
+        $this->animals->add($animal);
+        $animals = $this->animals->getAnimals();
 
         // Assert
         $this->assertCount(1, $animals); // Verifica se um animal foi adicionado

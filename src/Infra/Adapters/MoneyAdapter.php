@@ -1,9 +1,9 @@
 <?php
 
-namespace Bicho\Adapters;
+namespace Bicho\Infra\Adapters;
 
+use Bicho\Application\Contracts\MoneyInterface;
 use Money\Money;
-use Bicho\Domain\Contracts\MoneyInterface;
 
 class MoneyAdapter implements MoneyInterface
 {

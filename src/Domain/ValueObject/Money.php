@@ -2,7 +2,7 @@
 
 namespace Bicho\Domain\ValueObject;
 
-use Bicho\Domain\Contracts\MoneyInterface;
+use Bicho\Application\Contracts\MoneyInterface;
 
 class Money
 {

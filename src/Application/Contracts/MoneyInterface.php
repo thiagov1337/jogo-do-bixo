@@ -1,8 +1,6 @@
 <?php
 
-namespace Bicho\Domain\Contracts;
-
-use Bicho\Domain\ValueObject\Money;
+namespace Bicho\Application\Contracts;
 
 interface MoneyInterface
 {

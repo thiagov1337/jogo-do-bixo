@@ -2,8 +2,8 @@
 
 namespace Bicho\Domain\Factories;
 
-use Bicho\Adapters\MoneyAdapter;
 use Bicho\Domain\ValueObject\Money;
+use Bicho\Infra\Adapters\MoneyAdapter;
 
 class MoneyFactory
 {
