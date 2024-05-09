@@ -5,7 +5,7 @@ namespace Bicho\Infra\Adapters;
 use Bicho\Application\Contracts\MoneyInterface;
 use Money\Money;
 
-class MoneyAdapter implements MoneyInterface
+class MoneyPHPAdapter implements MoneyInterface
 {
     private Money $money;
     public function __construct($value)

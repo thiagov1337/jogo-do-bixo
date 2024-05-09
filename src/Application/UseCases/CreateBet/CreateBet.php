@@ -9,7 +9,7 @@ use Bicho\Domain\Repositories\AnimalRepository;
 class CreateBet
 {
     public function __construct(
-        private BetRepository $betRepository,
+        private BetRepository    $betRepository,
         private PlayerRepository $playerRepository,
         private AnimalRepository $animalRepository,
     )
@@ -18,7 +18,7 @@ class CreateBet
 
     public function execute(InputData $inputData): OutputData
     {
-        if(!$inputData->amount > 0){
+        if (!$inputData->amount > 0) {
             throw new \InvalidArgumentException('Amount invalid');
         }
 
@@ -31,6 +31,11 @@ class CreateBet
             animal: $animal
         );
 
-        return new OutputData();
+        return new OutputData(
+            id: $bet->getId(),
+            amount: $bet->getAmount(),
+            player: $player,
+            animal: $animal
+        );
     }
 }
